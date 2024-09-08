@@ -1,23 +1,25 @@
 def evaluar(dividendo, divisor):
-    # TODO: Coloca aquí el código del ejercicio 3: Division
-    cociente = dividendo//divisor
-    residuo = dividendo%divisor
-    if (divisor==0):
-        return "Operación Invalida"
+    # Verificar si el divisor es 0 antes de realizar la operación
+    if divisor == 0:
+        return "Operación inválida"
     
-    if (residuo == 0):
+    # Calcular cociente y residuo
+    cociente = dividendo // divisor
+    residuo = dividendo % divisor
+    
+    if residuo == 0:
         respuestaexa = "La división es exacta. \n" \
             "Cociente: " + str(cociente) + "\n" \
             "Residuo: " + str(residuo)
         return respuestaexa
     
-    if (cociente > 0 and residuo > 0):    
+    else:    
         respuestanoexa = "La división no es exacta. \n" \
             "Cociente: " + str(cociente) + "\n" \
             "Residuo: " + str(residuo)
         return respuestanoexa
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     print("Dividendo:", end="")
     dividendo = int(input())
     print("Divisor:", end="")

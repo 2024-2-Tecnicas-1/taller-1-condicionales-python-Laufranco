@@ -14,7 +14,7 @@ def evaluar(peso, estatura, edad):
         if(edad>=45):
             return "alto"
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     print("Peso:", end="")
     peso = int(input())
     print("Estatura:", end="")

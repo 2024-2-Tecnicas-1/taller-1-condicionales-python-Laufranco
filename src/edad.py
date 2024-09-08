@@ -13,8 +13,7 @@ def evaluar(dia, mes, anno):
     if(estemes,estedia)<(mes,dia):
         edadanno -=1
     return f"Usted tiene {edadanno} años";
-
-if _name_ == '_main_':
+if __name__ == '__main__':
     print("Ingrese su fecha de nacimiento")
     print("Día:", end="")
     dia = int(input())

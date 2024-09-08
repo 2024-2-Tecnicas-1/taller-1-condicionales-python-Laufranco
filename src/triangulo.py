@@ -20,7 +20,7 @@ def evaluar(a, b, c):
     #Escaleno
     return "El triángulo es escaleno"
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     print("a:", end="")
     a = float(input())
     print("b:", end="")

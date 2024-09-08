@@ -26,7 +26,7 @@ def evaluar(num_victorias_a, num_victorias_b):
             return "Aún no termina"
     
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     print("Los juegos ganados por A:", end="")
     num_victorias_a = int(input())
     print("Los juegos ganados por B:", end="")
