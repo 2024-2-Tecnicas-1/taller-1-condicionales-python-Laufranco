@@ -1,8 +1,20 @@
 def evaluar(dia, mes, anno):
     # TODO: Coloca aquí el código del ejercicio 6: Edad
-    return "";
+    from time import localtime
+    t= localtime()
+    estedia = t.tm_mday
+    estemes = t.tm_mon
+    esteanno = t.tm_year
 
-if __name__ == '__main__':
+    #calcular edad
+    edadanno= esteanno-anno
+
+    #Saber si este año ya cumplio, primero los meses luego el dia
+    if(estemes,estedia)<(mes,dia):
+        edadanno -=1
+    return f"Usted tiene {edadanno} años";
+
+if _name_ == '_main_':
     print("Ingrese su fecha de nacimiento")
     print("Día:", end="")
     dia = int(input())

@@ -1,10 +1,26 @@
-def evaluar(caracter):
-    # TODO: Coloca aquí el código del ejercicio 4: Letra o número
-    return "";
+def evaluar(peso, estatura, edad):
+    # TODO: Coloca aquí el código del ejercicio 8: Índice de masa corporal
+    imc=peso/(estatura**2)
+    if (imc<22.0):
+        if(edad<45):
+            return "bajo"
+    if (imc>=22.0):
+        if(edad<45):
+            return "medio"
+    if (imc<22.0):
+        if(edad>=45):
+            return "medio"
+    if (imc>=22.0):
+        if(edad>=45):
+            return "alto"
 
-if __name__ == '__main__':
-    print("Caracter:", end='')
-    caracter = input()
+if _name_ == '_main_':
+    print("Peso:", end="")
+    peso = int(input())
+    print("Estatura:", end="")
+    estatura = float(input())
+    print("Edad:", end="")
+    edad = int(input())
         
-    respuesta = evaluar(caracter)
+    respuesta = evaluar(peso, estatura, edad)
     print(respuesta)

@@ -1,8 +1,11 @@
 def evaluar(numero1, numero2, numero3, numero4):
     # TODO: Coloca aquí el código del ejercicio 5: Ordenamiento
-    return "";
-
-if __name__ == '__main__':
+    lista_numeros = [numero1,numero2,numero3,numero4]
+    lista_numeros.sort()
+    numeros = ' '.join(map(str, lista_numeros))
+    return(numeros)
+    
+if _name_ == '_main_':
     print("Número 1:", end="")
     numero1 = int(input())
     print("Número 2:", end="")
